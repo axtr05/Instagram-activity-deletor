@@ -15,7 +15,6 @@ manage your Instagram activity**. It allows you to remove **comments, likes,
 reels, and posts** through a real browser session using **Selenium and
 ChromeDriver**.
 
-────────────────────────────────────────────────────────────
 
 ✨ FEATURES
 ----------
@@ -27,7 +26,6 @@ ChromeDriver**.
 ⚙️ Configurable batch deletion  
 🔄 Graceful handling of Instagram rate limits  
 
-────────────────────────────────────────────────────────────
 
 ⚙️ REQUIREMENTS
 ---------------
@@ -36,7 +34,6 @@ ChromeDriver**.
 🧩 ChromeDriver (must match your Chrome version)  
 🤖 Selenium  
 
-────────────────────────────────────────────────────────────
 
 📦 INSTALLATION
 ---------------
@@ -48,7 +45,6 @@ ChromeDriver**.
 
 3️⃣ Make sure `chromedriver` is available in your system PATH.
 
-────────────────────────────────────────────────────────────
 
 🚀 USAGE
 --------
@@ -63,8 +59,6 @@ ChromeDriver**.
 
 5️⃣ Choose the desired option from the menu and let InstaDel do the work 🧹
 
-────────────────────────────────────────────────────────────
-
 🗑️ DELETION SETTINGS
 --------------------
 You can control how many items are deleted per batch by editing:
@@ -73,7 +67,6 @@ You can control how many items are deleted per batch by editing:
 
 Increase or decrease this value depending on your comfort level and rate limits.
 
-────────────────────────────────────────────────────────────
 
 ⚠️ DISCLAIMER
 -------------
@@ -86,15 +79,12 @@ could result in temporary restrictions or permanent account bans.
 The author is **not responsible** for any actions taken by Instagram against
 your account.
 
-────────────────────────────────────────────────────────────
-
 📄 LICENSE
 ----------
 MIT License
 
 See the LICENSE file for full license text.
 
-────────────────────────────────────────────────────────────
-
 © 2026 Akshay Krishna
+
 
