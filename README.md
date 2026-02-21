@@ -1,117 +1,97 @@
-```
-██████  ██░ ██ ▓█████  ██▀███   ██▓     ▒█████   ▄████▄   ██ ▄█▀
-▒██    ▒ ▓██░ ██▒▓█   ▀ ▓██ ▒ ██▒▓██▒    ▒██▒  ██▒▒██▀ ▀█   ██▄█▒ 
-░ ▓██▄   ▒██▀▀██░▒███   ▓██ ░▄█ ▒▒██░    ▒██░  ██▒▒▓█    ▄ ▓███▄░ 
-  ▒   ██▒░▓█ ░██ ▒▓█  ▄ ▒██▀▀█▄  ▒██░    ▒██   ██░▒▓▓▄ ▄██▒▓██ █▄ 
-▒██████▒▒░▓█▒░██▓░▒████▒░██▓ ▒██▒░██████▒░ ████▓▒░▒ ▓███▀ ░▒██▒ █▄
-▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░▒ ▒▒ ▓▒
-░ ░▒  ░ ░ ▒ ░▒░ ░ ░ ░  ░  ░▒ ░ ▒░░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒   ░ ░▒ ▒░
-░  ░  ░   ░  ░░ ░   ░     ░░   ░   ░ ░   ░ ░ ░ ▒  ░        ░ ░░ ░ 
-      ░   ░  ░  ░   ░  ░   ░         ░  ░    ░ ░  ░ ░      ░  ░   
-                                                  ░               
-```
+ █████╗ ██╗  ██╗████████╗██████╗ 
+██╔══██╗╚██╗██╔╝╚══██╔══╝██╔══██╗
+███████║ ╚███╔╝    ██║   ██████╔╝
+██╔══██║ ██╔██╗    ██║   ██╔══██╗
+██║  ██║██╔╝ ██╗   ██║   ██║  ██║
+╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
 
-# 📱 **InstaDel - Instagram Activity Cleaner**
+📱 InstaDel — Instagram Activity Cleaner
+======================================
 
-`instdel.py` is a simple yet powerful Python script that helps you clean up your Instagram activity, including comments, likes, reels, and posts. Built with Selenium and ChromeDriver, this script interacts with your Instagram account and allows you to quickly delete various types of activity. 🚀
+🧹 InstaDel is a Python-based automation tool designed to help you **clean and
+manage your Instagram activity**. It allows you to remove **comments, likes,
+reels, and posts** through a real browser session using **Selenium and
+ChromeDriver**.
 
-## ✨ **Features**
+────────────────────────────────────────────────────────────
 
-* 📝 **Delete Comments**
-* ❤️ **Delete Likes**
-* 🎬 **Delete Reels**
-* 🖼️ **Delete Posts**
-* 🔑 **Manual Login**: Log in manually through the browser, then proceed to clean your account.
-* 🔄 **No Quit After Deletion**: After deleting items, the script returns you to the main menu to select another option.
+✨ FEATURES
+----------
+📝 Delete comments  
+❤️ Remove likes  
+🎬 Remove reels  
+🖼️ Delete posts  
+🔐 Manual login (no credentials stored)  
+⚙️ Configurable batch deletion  
+🔄 Graceful handling of Instagram rate limits  
 
-## ⚙️ **Requirements**
+────────────────────────────────────────────────────────────
 
-* **Python** (version 3.x)
-* **Selenium**: Used for automating web interactions.
-* **ChromeDriver**: Needed to interact with the Chrome browser. Ensure you have the appropriate version for your operating system.
+⚙️ REQUIREMENTS
+---------------
+🐍 Python 3.x  
+🌐 Google Chrome  
+🧩 ChromeDriver (must match your Chrome version)  
+🤖 Selenium  
 
-### 📦 **Installation**
+────────────────────────────────────────────────────────────
 
-1. Install Python (if not already installed).
-   Download Python from [here](https://www.python.org/downloads/).
+📦 INSTALLATION
+---------------
+1️⃣ Install Selenium:
+    pip install selenium
 
-2. Install the required Python packages by running the following command:
+2️⃣ Download ChromeDriver:
+    https://sites.google.com/chromium.org/driver/
 
-   ```bash
-   pip install selenium
-   ```
+3️⃣ Make sure `chromedriver` is available in your system PATH.
 
-3. Download **ChromeDriver** from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
-   Ensure the version matches the version of Google Chrome you're using.
+────────────────────────────────────────────────────────────
 
-4. Make sure **chromedriver** is in your system's PATH or provide the path to chromedriver in the script.
+🚀 USAGE
+--------
+1️⃣ Run the script:
+    python instdel.py
 
----
+2️⃣ A Chrome browser window will open automatically.
 
-## 🛠️ **How to Use**
+3️⃣ Log in to Instagram **manually**.
 
-1. Clone or download the repository and save the file as `instdel.py`.
+4️⃣ If prompted, click **"Not now"** when asked to save login info.
 
-2. Before running the script, log into your Instagram account manually via the Chrome browser that will be used by the script.
+5️⃣ Choose the desired option from the menu and let InstaDel do the work 🧹
 
-3. Run the script:
+────────────────────────────────────────────────────────────
 
-   ```bash
-   python instdel.py
-   ```
+🗑️ DELETION SETTINGS
+--------------------
+You can control how many items are deleted per batch by editing:
 
-4. The script will open a Chrome browser window. After logging in, you will see the following options:
+    AT_ONCE_DELETE = 20
 
-   ```
-   === INSTAGRAM WIPE TOOL ===
-   1. Delete Comments 📝
-   2. Delete Likes ❤️
-   3. Delete Reels 🎬
-   4. Delete Posts 🖼️
-   5. Exit ❌
-   6. Update/Info ℹ️
-   ```
+Increase or decrease this value depending on your comfort level and rate limits.
 
-   * Select an option (1-6) to choose the action you want to perform.
-   * After completing an action (deleting items), you will be returned to the main menu to choose another action. The program will not quit unless you select "Exit."
+────────────────────────────────────────────────────────────
 
----
+⚠️ DISCLAIMER
+-------------
+🚨 This tool is intended **for educational purposes only**.
 
-## 🗑️ **Deletion Details**
+Automating Instagram actions **may violate Instagram’s Terms of Service** and
+could result in temporary restrictions or permanent account bans.
 
-* **Delete Comments 📝**: Deletes comments from posts you have interacted with.
-* **Delete Likes ❤️**: Removes likes from posts and media.
-* **Delete Reels 🎬**: Deletes reels that you have liked or interacted with.
-* **Delete Posts 🖼️**: Deletes your Instagram posts.
-* **Items per Deletion**: The number of items to delete at once is set in the script as `AT_ONCE_DELETE`. You can modify this value based on your preference.
+⚠️ **Use at your own risk.**
+The author is **not responsible** for any actions taken by Instagram against
+your account.
 
----
+────────────────────────────────────────────────────────────
 
-## 🔑 **Manual Login Process**
+📄 LICENSE
+----------
+MIT License
 
-1. When you run the script, it will prompt you to log in.
-2. After logging in manually, click **"Not now"** on any pop-up dialogs asking whether you want to save your login information.
-3. The script will then proceed to the activity page and perform the selected action.
+See the LICENSE file for full license text.
 
----
+────────────────────────────────────────────────────────────
 
-## ⚠️ **Notes**
-
-* **Please ensure that you are using the script with caution**, as deleting posts, comments, and likes is irreversible.
-* The script **does not quit automatically** after completing an action; it will return to the menu, allowing you to choose another action.
-* In case Instagram throws rate limits or issues, the script will handle these gracefully by refreshing the page and retrying the action.
-
----
-
-## 🛠️ **Troubleshooting**
-
-* **Browser Window Closes Unexpectedly**: Ensure that ChromeDriver is installed correctly and the version matches your installed version of Google Chrome.
-* **Rate Limits**: If you hit Instagram's rate limits, the script will retry after refreshing the page.
-
----
-
-## 📝 **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
+© 2026 Akshay Krishna
